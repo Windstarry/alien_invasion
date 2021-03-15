@@ -20,3 +20,7 @@ class Settings():
 
         #设置外星人参数
         self.alien_image="images/alien.bmp"
+        self.alien_speed_factor = 0.5
+        self.fleet_drop_speed = 5
+        #设置移动方向,1表示右移，-1表示左移
+        self.fleet_direction = 1
