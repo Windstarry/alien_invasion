@@ -10,6 +10,7 @@ class Settings():
         #设置飞船图像位置
         self.ship_image='images/ship.bmp'
         self.ship_speed_factor = 1.5
+        self.ship_limit = 3
 
         #设置子弹参数
         self.bullet_speed_factor = 1
@@ -21,6 +22,6 @@ class Settings():
         #设置外星人参数
         self.alien_image="images/alien.bmp"
         self.alien_speed_factor = 0.5
-        self.fleet_drop_speed = 5
+        self.fleet_drop_speed = 30
         #设置移动方向,1表示右移，-1表示左移
         self.fleet_direction = 1
