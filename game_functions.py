@@ -20,6 +20,7 @@ def check_keydown_events(event,ai_settings,screen,stats,ship,aliens,bullets):
         start_game(ai_settings,screen,stats,ship,aliens,bullets)
     elif event.key == pygame.K_ESCAPE:
         #print("游戏正在退出中......")
+        stats.write_high_score(stats.high_score)
         sys.exit()
 
 def start_game(ai_settings,screen,stats,ship,aliens,bullets):
@@ -51,6 +52,8 @@ def check_events(ai_settings,screen,stats,sb,ship,aliens,bullets,play_button):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             #print("游戏正在退出中......")
+            #写入最高分
+            stats.write_high_score(stats.high_score)
             sys.exit()
         elif event.type == pygame.KEYDOWN:
             check_keydown_events(event,ai_settings,screen,stats,ship,aliens,bullets)

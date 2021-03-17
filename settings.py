@@ -12,7 +12,7 @@ class Settings():
         self.ship_limit = 2
 
         #设置子弹参数
-        self.bullet_width = 300
+        self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = (60,60,60)
         self.bullet_allowed = 6
@@ -23,6 +23,8 @@ class Settings():
         self.speedup_scale = 1.1
         self.score_scale = 1.2
         self.initialize_dynamic_settings()
+        #设置最高分保存文件
+        self.high_score_file = "high_score.json"
 
     def initialize_dynamic_settings(self):
         #游戏相关参数初始化
