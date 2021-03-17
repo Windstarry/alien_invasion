@@ -3,8 +3,8 @@ class Settings():
     def __init__(self):
         
         #设置屏幕参数
-        self.screen_width=960
-        self.screen_height=640
+        self.screen_width=1024
+        self.screen_height=720
         self.bg_color=(230,230,230)
 
         #设置飞船图像位置
